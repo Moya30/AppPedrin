@@ -1,7 +1,8 @@
 $(function () {
     const verificarCambio = () => {        
         $.get("leerDato.jsp", function( data ) {
-           $("#most").text(data);
+           $("#estado").text(data);
+           
         });        
         setTimeout(verificarCambio, 1000);
     };

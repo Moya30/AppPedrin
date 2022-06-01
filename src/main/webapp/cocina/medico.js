@@ -1,12 +1,16 @@
 $(function () {
 
-    $("button").click(function () {
+    $("#enviar").on( "click",function () {
         let nomb = document.getElementById("nomb").value;
         let comentario = document.getElementById("testId").value;
-      alert(nom);
-      alert(comentario);
-        $.get("cambiarDato.jsp", {comen:comentario}, function (data) {
+        let form = {
+            nombre: nomb,
+            coment: comentario
+        }
+        console.log("clickeando");
+        $.get("cambiarDato.jsp", form, function (data) {
              //alert( "cambiarDato.jsp");
+             console.log(data);
         });
         
       

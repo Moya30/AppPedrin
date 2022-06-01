@@ -1,15 +1,18 @@
 package util;
 import java.io.Closeable;
+import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileOutputStream;
 import java.io.IOException;
+import java.util.Scanner;
 public class Dato {
 
     public static void updateData(String text) {
         FileOutputStream fos = null;
         try {
+            String ruta = "C:\\Users\\Freddy\\Desktop";
             //fos = new FileOutputStream(ruta+"\\dato.txt");
-            fos = new FileOutputStream("C:\\dato.txt");
+            fos = new FileOutputStream(ruta + "\\dato.txt");
             fos.write(text.getBytes("UTF-8"));
         } catch (IOException e) {
             try {
@@ -23,12 +26,13 @@ public class Dato {
     public static String getData() {
         FileInputStream fin = null;
         try {
-            fin = new FileInputStream("C:\\dato.txt");
+            String ruta = "C:\\Users\\Freddy\\Desktop";
+            fin = new FileInputStream(ruta+"\\dato.txt");
 
             String cadena;
 
             cadena = String.valueOf(fin.read());
-            return String.valueOf( cadena);
+            return "dsa";
 
         } catch (IOException e) {
             try {
@@ -39,6 +43,21 @@ public class Dato {
             return "";
         }
 
+    }
+    
+    
+    public static String getDatoNombre() {
+        try {
+            String ruta = "C:\\Users\\Freddy\\Desktop";
+            File doc = new File(ruta+"\\dato.txt");
+            Scanner obj = new Scanner(doc);
+            
+            String nombre = obj.nextLine();
+            
+            return nombre;
+        } catch (Exception e) {
+            return "";
+        }
     }
 
     public static void close(Closeable closeable) {
