@@ -1,0 +1,27 @@
+
+@import url("https://fonts.googleapis.com/css2?family=Anton&family=Bree+Serif&family=Roboto:ital,wght@1,700&display=swap");
+
+
+/*font-family: 'Anton', sans-serif;
+
+font-family: 'Bree Serif', serif;
+
+font-family: 'Roboto', sans-serif;
+
+.navbar a {
+font-family: 'Bree Serif', serif;
+
+}
+*/
+
+.nav-link{
+    font-size: 24px;
+
+}
+
+.letraLogo{
+    font-size: 50px;
+    font-family: 'Anton', sans-serif;
+    text-decoration: brown;
+    
+}

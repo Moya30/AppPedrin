@@ -1,0 +1,18 @@
+label{
+    display: block;
+    padding: 1em;
+    margin-bottom: 1em;
+    background: silver;
+    color: white;
+    border-radius: 5px;
+    font-family:Verdana;
+}
+input{
+    display: none;
+}
+#libre:checked+label{
+    background: forestgreen;
+}
+#ocupado:checked+label{
+    background: darkred;
+}
