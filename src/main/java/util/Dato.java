@@ -23,29 +23,6 @@ public class Dato {
         }
     }
 
-    public static String getData() {
-        FileInputStream fin = null;
-        try {
-            String ruta = "C:\\Users\\Freddy\\Desktop";
-            fin = new FileInputStream(ruta+"\\dato.txt");
-
-            String cadena;
-
-            cadena = String.valueOf(fin.read());
-            return "dsa";
-
-        } catch (IOException e) {
-            try {
-                close(fin);
-                throw e;
-            } catch (IOException ex) {
-            }
-            return "";
-        }
-
-    }
-    
-    
     public static String getDatoNombre() {
         try {
             String ruta = "C:\\Users\\Freddy\\Desktop";

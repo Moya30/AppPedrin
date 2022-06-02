@@ -4,9 +4,9 @@ $(function () {
            $("#estado").text(data);
            
         });        
-        setTimeout(verificarCambio, 1000);
+        setTimeout(verificarCambio, 3000);
     };
 // Initiate call
-    setTimeout(verificarCambio(), 1000);
+    setTimeout(verificarCambio(), 3000);
 
 });
