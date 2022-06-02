@@ -10,10 +10,9 @@
     myObject.put("error", new Boolean(true));
 
     String[] datos = {dato, dato2};
-    JSONObject data = new JSONObject();
+
     Dato.updateData(Arrays.toString(datos));
-    
-    
+
     out.print(myObject);
 
 %>

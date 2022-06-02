@@ -45,11 +45,6 @@ public class Dato {
     }
 
     public static void main(String args[]) {
-        //String directoryName = System.getProperty("user.dir");
-        Dato.updateData("0");
-        // System.out.println("Current Working Directory is = " + directoryName);
-
-        System.out.println(Dato.getData());
-        // Dato.updateData(ruta, value);
+    
     }
 }

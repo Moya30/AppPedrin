@@ -7,10 +7,10 @@ $(function () {
             nombre: nomb,
             coment: comentario
         }
-        console.log("clickeando");
+       
         $.get("cambiarDato.jsp", form, function (data) {
              //alert( "cambiarDato.jsp");
-             console.log(data);
+          
         });
         
       
